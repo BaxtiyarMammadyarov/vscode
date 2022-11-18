@@ -1,0 +1,156 @@
+h<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="head">
+			<h3>Loan details</h3>
+			<hr>
+		</div>
+		<table class="table1">
+			<tr>
+				<td class="pd-10">
+					Client
+				</td>
+				<td class="pd-10">
+					<div class="select">
+						
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="pd-15">Telephone Number</td>
+				<td class="pd-15" ><input type="text" name="" id="phnum" class="br-none"></td>
+			</tr>
+			<tr>
+				<td class="pd-10">Loan Amount</td>
+				<td class="pd-10">
+					<input type="text" name="" id="loan" class="br-none">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="pd-10">
+					Loan Amount (period)
+
+				</td>
+				<td class="pd-10">
+					<input type="text" name="" id="period" class="br-none">
+				</td>
+
+			</tr>
+
+			<tr>
+
+				<td class="pd-10">
+					Monthly Interet rate
+				</td>
+				<td class="pd-10">
+					<input type="text" name="" id="rate" placeholder="5%" class="br-none">
+				</td>
+
+			</tr>
+
+			<tr>
+				<td class="pd-10">Payout date</td>
+				<td class="pd-10">
+					<input type="date" name="" id="month2" placeholder="5" class="br-none">
+
+				</td>
+			</tr>
+			<tr>
+				<td style="padding: 20px 0;">İnvoices:</td>
+			</tr>
+
+		</table>
+		<div class="bottom2" style="text-align: end;">
+			<button type="button" value="hesabla" style="padding: 10px; width: 90px;" id="hesab" class="btn">Hesabla</button>
+		</div>
+		<table class="table2" id="table">
+			<thead>
+		
+				<th>İnvoice No</th>
+				<th>Due Date</th>
+				<th>Amount</th>
+			</thead>
+			<tbody class="tbody">
+			
+			</tbody>
+
+
+		</table>
+
+		<div class="inter">
+			<div class="bottom">
+				<div style="display: inline;margin: 0 30px; ">Total Interest</div>
+				<input type="text" class="total" placeholder="75.00">
+			</div>
+			<div class="bottom2" style="text-align: end;">
+				<button type="submit" value="Göndər" style="padding: 10px; width: 90px;">Göndər</button>
+				<button type="button" value="Cancel" style="padding: 10px; width: 90px;">Cancel</button>
+			</div>
+		</div>
+
+
+	</div>
+	<script>
+
+		$(document).ready(function () {
+
+			$(".btn").click(function () {
+				console.log("salam");
+				var amount = parseFloat($("#loan").val());
+				var period = parseInt($("#period").val());
+				var rate = parseInt($("#rate").val());
+				var month2 = $("#month2").val();
+				var month = new Date(month2);
+				var ayliqOdenis = (amount * rate / 100 + amount) / period;
+				var table = $(".tbody");
+				console.log(month);
+
+				for (let index = 0; index < period; index++) {
+
+					var pr = index + 1;
+					var td1 = "<td class= 'pd-10'>"+pr+"</td>";
+				
+					var td2 = "<td class= 'pd-10'>"+ayliqOdenis+"</td>" ;
+				
+					month = add_months(month,1);
+					var d = month.getDate();
+					console.log(d);
+					var m = month.getMonth();
+					m += 1;  // JavaScript months are 0-11
+					console.log(m);
+					var y = month.getFullYear();
+					console.log(y);
+					var td3 = "<td class= 'pd-10'>"+d + "/" + m + "/" + y+"</td>" ;
+					var tr = "<tr>" +td1+td3+td2 + "</tr>"
+					table.append(tr);
+				}
+
+
+			});
+			function add_months(dt, n) {
+
+				return new Date(dt.setMonth(dt.getMonth() + n));
+			}
+
+
+		});
+
+
+	</script>
+</body>
+
+</html>
