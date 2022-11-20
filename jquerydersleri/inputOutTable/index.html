@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        .table {
+            margin: 2px;
+            border: 2px;
+
+        }
+
+        .form-1 {
+            display: flex;
+
+
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <button type="button" class="submit">Yadda saxla</button>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <th>Ad</th>
+            <th>Soyad</th>
+        </thead>
+        <tbody class="tb-1">
+
+        </tbody>
+    </table>
+    <script>
+        $(document).ready(function () {
+            var list = [];
+            $(".submit").click(function () {
+                var ad = $("#fname").val();
+                var soyad = $("#lname").val();
+                var ad_v = "<tr><td>" + ad + "</td></tr>";
+                var soyad_v = "<tr><td>" + ad + "</td>" + "<td>" + soyad + "</td></tr>";
+                list.push(ad_v);
+                list.push(soyad_v);
+                $(".tb-1").append(soyad_v);
+                console.log(list);
+                //    for (let index = 0; index < list.length; index++) {
+
+
+                //    }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

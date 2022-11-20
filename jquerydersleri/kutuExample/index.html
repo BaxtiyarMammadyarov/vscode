@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <style>
+        .box {
+            width: 250px;
+            height: 150px;
+            background: #ffa9aa;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box"><h4>click</h4> mause on clic</div>
+<div class="box"><h4>dblclick</h4> mause dbkclic</div>
+<div class="box"><h4>mouseenter</h4> mause ustune gelende</div>
+<div class="box"><h4>mouseleave</h4> mause ustunden cikand </div>
+<div class="box"><h4>mousdown</h4> mause klik basiland</div>
+<div class="box"><h4>mouseup</h4> mause klik buraxilanda</div>
+<div class="box"><h4>hover</h4> mause hover</div>
+<div class="box"><h4>focus</h4> form elamanina odaklanma <input type="text" id="ad"></div>
+<div class="box"><h4>blur</h4>form elemanina terk  <input type="text" id="soyad"></div>
+<div class="box"><h4>resize</h4> pencere boyuntunu deyismesi</div>
+
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $(".box:eq(0)").click(function(){
+            $(this).css("background","blue");
+        });
+        $(".box:eq(1)").dblclick(function(){
+            $(this).css("background","red");
+        });
+        $(".box:eq(2)").mouseenter(function () { 
+            $(this).css("background","green");
+            $(this).css("color","red");
+        });
+        $(".box:eq(3)").mouseleave(function () { 
+            $(this).css("background","yellow");
+            $(this).css("color","red");
+            $(this).fadeOut(2000);
+
+        });
+        $(".box:eq(4)").mousedown(function () { 
+            $(this).css("background","yellow");
+            $(this).css("color","red");
+            $(this).fadeout(2000);
+
+        });
+        $(".box:eq(5)").mouseup(function () { 
+            $(this).css("background","red");
+            $(this).css("color","blue");
+            $(this).fadeout(2000);
+
+        });
+        $(".box:eq(6)").hover(function () { 
+            $(this).css("background","blue");
+            $(this).css("color","red");
+            $(this).fadeout(2000);
+
+        },
+        function(){
+            $(this).css("background","red");
+            $(this).css("color","blue");
+            $(this).fadeout(2000);
+        });
+        $(".box:eq(7) input").focus(function () { 
+            $(this).css("background","blue");
+            $(this).css("color","red");
+            $(this).fadeout(2000);
+
+        });
+        $(".box:eq(8) input").blur(function () { 
+            $(this).css("background","red");
+            $(this).css("color","blue");
+        });
+        $(window).resize(function () { 
+           $(".box:eq(9)").append($(window).width());
+        });
+    });
+</script>
+
+</html>
