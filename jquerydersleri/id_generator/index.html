@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Generator</title>
+    <script src="jquery-3.6.1.min.js" ></script>
+    <style>
+        input[type=text],
+select {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+input{
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+div{
+   margin: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="button" class="btn" value="Id Generator">
+        <input type="text" id="new-id">
+    </div>
+   
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+            let date_v = new Date();
+            let id_c ="3";
+            let il = ""
+            let month_v = ""
+            let day_v = ""
+            let hour_v = ""
+            let minut_v = ""
+            let sec_v = "";
+            let min_sec = "";
+             il += date_v.getFullYear();
+            month_v += date_v.getMonth();
+             day_v += date_v.getDay();
+             hour_v += date_v.getHours();
+             minut_v += date_v.getMinutes();
+             sec_v += date_v.getSeconds();
+             min_sec+= date_v.getMilliseconds();
+             
+             if(hour_v.length === 1){
+                hour_v = "0"+hour_v;
+            }
+             if(day_v.length === 1){
+                day_v = "0"+day_v;
+            }
+            if(hour_v.length === 1){
+                hour_v = "0"+hour_v;
+            }
+            if(minut_v.length === 1){
+                minut_v = "0"+minut_v;
+            }
+            if(sec_v.length === 1){
+                sec_v = "0"+sec_v;
+            }
+            if(min_sec.length === 1){
+                min_sec = "00"+min_sec;
+            }
+            else if (min_sec.length === 2){
+                min_sec = "0"+min_sec;
+            }
+
+            id_c = id_c+il+month_v+day_v+ hour_v +minut_v+sec_v+min_sec;
+            // console.log( "il: " +il);
+            // console.log( "ay: "+month_v);
+            // console.log( "gun "+day_v);
+            // console.log( "saat: "+hour_v);
+            // console.log( "minut: "+minut_v);
+            // console.log( "saniyə: "+sec_v);
+            // console.log( "milli saniyə: "+min_sec);
+            console.clear();
+            console.log( "yeni id : "+id_c);
+            $("#new-id").val(id_c);
+            $("#new-id").attr("disabled","true");
+
+ 
+        });
+            });
+      
+    </script>
+</body>
+</html>
