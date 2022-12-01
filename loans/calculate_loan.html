@@ -94,11 +94,11 @@ h<!DOCTYPE html>
 		<div class="inter">
 			<div class="bottom">
 				<div style="display: inline;margin: 0 30px; ">Total Interest</div>
-				<input type="text" class="total" placeholder="75.00">
+				<input type="text" class="total" placevaolder="75.00" value="1100">
 			</div>
 			<div class="bottom2" style="text-align: end;">
-				<button type="submit" value="Göndər" style="padding: 10px; width: 90px;">Göndər</button>
-				<button type="button" value="Cancel" style="padding: 10px; width: 90px;">Cancel</button>
+				<button type="button" value="Göndər"  class="send">Göndər</button>
+				<button type="button" value="Cancel"  class="cancel">Cancel</button>
 			</div>
 		</div>
 
@@ -116,15 +116,16 @@ h<!DOCTYPE html>
 				var month2 = $("#month2").val();
 				var month = new Date(month2);
 				var ayliqOdenis = (amount * rate / 100 + amount) / period;
+				var sum = amount * rate / 100 + amount;
 				var table = $(".tbody");
 				console.log(month);
 
 				for (let index = 0; index < period; index++) {
 
 					var pr = index + 1;
-					var td1 = "<td class= 'pd-10'>"+pr+"</td>";
+					var td1 = "<td class= 'pd-11'>"+pr+"</td>";
 				
-					var td2 = "<td class= 'pd-10'>"+ayliqOdenis+"</td>" ;
+					var td2 = "<td class= 'pd-11'>"+ayliqOdenis+"</td>" ;
 				
 					month = add_months(month,1);
 					var d = month.getDate();
@@ -134,13 +135,20 @@ h<!DOCTYPE html>
 					console.log(m);
 					var y = month.getFullYear();
 					console.log(y);
-					var td3 = "<td class= 'pd-10'>"+d + "/" + m + "/" + y+"</td>" ;
-					var tr = "<tr>" +td1+td3+td2 + "</tr>"
+					var td3 = "<td class= 'pd-11'>"+d + "/" + m + "/" + y+"</td>" ;
+					var tr = "<tr class='tr-11'>" +td1+td3+td2 + "</tr>"
 					table.append(tr);
 				}
-
+				$(".total").val(sum) ;
 
 			});
+			
+             $(".cancel").click(function(){
+				location.reload();
+			 });
+	
+			
+
 			function add_months(dt, n) {
 
 				return new Date(dt.setMonth(dt.getMonth() + n));
