@@ -7,7 +7,7 @@ body{
 
 .container{
     background-color:aliceblue ;
-    width: 90%;
+    width: 100%;
 
 }
 li{
@@ -16,6 +16,7 @@ li{
 header{
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 header ul{
     display: flex;
@@ -65,7 +66,7 @@ ul u{
 ul li :hover ul{
     background-color: darkgrey;
 }
-ul li:hover ul{
+header ul li:hover ul{
   display: block;
   background-color: dimgrey;
 }
@@ -144,3 +145,7 @@ ul li:hover ul{
     padding: 0px 2px;
   }
 
+.reklam{
+  width: 30%;
+  background-color: #3B5998;
+}
