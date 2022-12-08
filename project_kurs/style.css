@@ -2,14 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #E5E5E5;
+   
 }
 
 .container {
     width: 100%;
     margin: auto;
     background: #E5E5E5;
-    padding: 20px;
+    padding: 20px 20px;
 }
 
 section {
@@ -18,7 +18,8 @@ section {
 
 .section-1,
 .section-2
-.section-3 {
+.section-3 
+.section-4{
     width: 80%;
 }
 
@@ -49,7 +50,9 @@ h {
     padding: 10px;
 }
 
-.content-img img,
+.content-img {
+   width: 90%;
+}
 .futer-img img {
     width: 100%;
 }
@@ -131,6 +134,7 @@ main {
 }
 .wd-80s{
     width: 30%;
+    margin: 10px;
 }
 
 .flex4 {
@@ -140,9 +144,9 @@ main {
     justify-content: space-between;
 }
 
-.sekil {
-    width: 70%;
-}
+/* .sekil {
+    width: 100%;
+} */
 
 .sekil img {
     width: 100%;
@@ -161,9 +165,17 @@ main {
 }
 
 .pbas {
-    font-size: 18px;
+   width: 100%;
+   font-size: 17px;
     font-weight: 800;
+    margin: 10px;
 }
+.pbas-1 {
+    width: 100%;
+    font-size: 16px;
+     font-weight: 400;
+     margin: 10px;
+ }
 
 aside {
     margin: 50px 0;
@@ -193,17 +205,153 @@ aside {
     font-size: 1em;
     font-weight: 700;
 }
-.sec-alt{
-    margin: auto;
+.section-3 {
+   background-color: #9DC9C8;
+   margin: auto;
+   padding: 20px 40px;
+   
 }
+.section-3 h3{
+    font-family: Roboto Slab;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.c-1 {
+margin: 10px;
+
+}
+.section-3-flex-div{
+   margin-right: 20px;
+}
+.section-3-flex-div h4{
+    margin-bottom: 10px;
+ }
+ .section-3-flex-div p{
+   font-size: 12px;
+ }
+.section-3 div span{
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.section-3 div h2{
+    font-family: Roboto;
+/* font-size: 46px;
+font-weight: 400;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left; */
+
+}
+section-3-flex-div{
+font-family: Roboto;
+margin: 0;
+/* font-size: 10px;
+font-weight: 400;
+line-height: 10px;
+letter-spacing: 0em;
+text-align: left; */
+
+}
+section-3-flex-div h4,p{
+   margin: auto;
+    
+    }
+
+.c1{
+   width: 60%;
+}
+.futer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.futer-section div img{
+    color: #000000;
+}
+.section-4 {
+    background-color: #000000;
+}
+.img-a {
+    display: block;
+    align-items: center;
+    
+}
+.img-a-1{
+    align-items: center;
+}
+.img-a-1 img{
+}
+.elaqe{
+    align-items: center;
+}
+.elaqe a{
+    color: #ffff;
+
+}
+.elaqe img{
+    width: 8%;
+    margin:0 5px;
+}
+.elaqe a{
+   display: block;
+}
+.elaqe span{
+    width: 100%;
+}
+.futer-sosial {
+    padding: 40px;
+}
+futer-img{
+    display: block;
+}
+.futer-sosial ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article-1{
+    display: flex;
+    justify-content: wrap;
+    flex-wrap: wrap;
+   width: 80%;
+   align-items: center;
+   margin-left: 110px;
+}
+.article-p{
+    margin: 10px 10px 10px 0px;
+}
+.futer-span{
+    color:#ffff;
+    margin: 0px 10px 20px 50px;
+    padding: 0 0 20px 0;
+}
+
+
+
 
 @media (max-width: 830px) {
     .futer-img {
         display: none;
+
+    }
+    .article-1{
+
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
     .futer-img {
         display: none;
     }
@@ -217,6 +365,57 @@ aside {
     }
     .flex3{
         display: block
+    }
+    .article-1{
+        display: block;
+    }
+    .neoyrenirik{
+        width: 100%;
+    }
+    .futer-sosial{
+        padding: 0;
+    }
+    .futer-section{
+        display: block;
+        padding: 50px;
+    }
+    .elaqe span{
+        width: 100%;
+        font-size: 10px;
+    }
+    .listContent{
+        width: 100%;
+    }
+    .list{
+        width: 100%;
+    }
+    .textContent{
+        display: block;
+    }
+    .fs-25 {
+        font-size : 15px;
+        width: 100%;
+    }
+    .text1{
+        width: 100%;
+    }
+    .article-1{
+        margin: 0;
+        margin-left: 0px;
+    }
+    .wd-80s{
+        width: 100%;
+        margin: 0px;
+    }
+    .sekil{
+      width: 100%;
+    }
+    .mr{
+        margin: 0px;
+    }
+    .pfutUp {
+         width: 100%; 
+        margin: 0px 0px; 
     }
 }
 
