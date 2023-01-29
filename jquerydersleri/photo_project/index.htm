@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="sphoto" id="sphoto1">
+        <img src="photo/Galatasaray_Sports_Club_Logo.svg.png">
+    </div>
+    <div class="sphoto" id="sphoto2">
+        <img src="photo/besiktas.png">
+    </div>
+    <div class="sphoto" id="sphoto3">
+        <img src="photo/menzere.jpeg">
+    </div>
+    <div class="sphoto" id="sphoto4">
+        <img src="photo/menzere2.jpg">
+    </div>
+    <div class="bphoto" id="bphoto1">
+        <div class="ic">
+            <img src="photo/Galatasaray_Sports_Club_Logo.svg.png" alt="">
+        </div>
+
+    </div>
+    <div class="bphoto" id="bphoto2">
+        <div class="ic">
+            <img src="photo/besiktas.png" alt="">
+        </div>
+
+    </div>
+    <div class="bphoto" id="bphoto3">
+        <div class="ic">
+            <img src="photo/menzere.jpeg">
+        </div>
+
+    </div>
+    <div class="bphoto" id="bphoto4">
+        <div class="ic">
+            <img src="photo/menzere2.jpg" alt="">
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".sphoto").click(function () {
+                let resimAdi = $(this).attr("id");
+                let resimNo = resimAdi.slice(6);
+                let tiklanaPhoto = "#bphoto" + resimNo;
+
+                $(tiklanaPhoto).fadeIn()
+
+            });
+            $(".bphoto").click(function () {
+                $(".bphoto").fadeOut();
+            });
+            $(".ic").click(function(){
+                event.stopImmediatePropagation();
+            })
+        });
+    </script>
+</body>
+
+</html>

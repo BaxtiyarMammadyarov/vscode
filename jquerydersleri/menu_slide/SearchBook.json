@@ -1,0 +1,166 @@
+{
+  "error": "0",
+  "total": "20",
+  "books": [
+    {
+      "title": "Data Quality Fundamentals",
+      "subtitle": "A Practitioner&#039;s Guide to Building Trustworthy Data Pipelines",
+      "isbn13": "9781098112042",
+      "price": "$46.95",
+      "image": "https://itbook.store/img/books/9781098112042.png",
+      "url": "https://itbook.store/books/9781098112042"
+    },
+    {
+      "title": "Learning Google Analytics",
+      "subtitle": "Creating Business Impact and Driving Insights",
+      "isbn13": "9781098113087",
+      "price": "$49.94",
+      "image": "https://itbook.store/img/books/9781098113087.png",
+      "url": "https://itbook.store/books/9781098113087"
+    },
+    {
+      "title": "Learning Blazor",
+      "subtitle": "Build Single-Page Apps with WebAssembly and C#",
+      "isbn13": "9781098113247",
+      "price": "$36.99",
+      "image": "https://itbook.store/img/books/9781098113247.png",
+      "url": "https://itbook.store/books/9781098113247"
+    },
+    {
+      "title": "Scaling Python with Ray",
+      "subtitle": "Adventures in Cloud and Serverless Patterns",
+      "isbn13": "9781098118808",
+      "price": "$36.99",
+      "image": "https://itbook.store/img/books/9781098118808.png",
+      "url": "https://itbook.store/books/9781098118808"
+    },
+    {
+      "title": "Trino: The Definitive Guide, 2nd Edition",
+      "subtitle": "SQL at Any Scale, on Any Storage, in Any Environment",
+      "isbn13": "9781098137236",
+      "price": "$52.99",
+      "image": "https://itbook.store/img/books/9781098137236.png",
+      "url": "https://itbook.store/books/9781098137236"
+    },
+    {
+      "title": "Genomics in the Azure Cloud",
+      "subtitle": "Scaling Your Bioinformatics Workloads Using Enterprise-Grade Solutions",
+      "isbn13": "9781098139049",
+      "price": "$63.57",
+      "image": "https://itbook.store/img/books/9781098139049.png",
+      "url": "https://itbook.store/books/9781098139049"
+    },
+    {
+      "title": "Modern System Administration",
+      "subtitle": "Managing Reliable and Sustainable Systems",
+      "isbn13": "9781492055211",
+      "price": "$59.99",
+      "image": "https://itbook.store/img/books/9781492055211.png",
+      "url": "https://itbook.store/books/9781492055211"
+    },
+    {
+      "title": "Developing on AWS with C#",
+      "subtitle": "A Comprehensive Guide on Using C# to Build Solutions on the AWS Platform",
+      "isbn13": "9781492095873",
+      "price": "$46.95",
+      "image": "https://itbook.store/img/books/9781492095873.png",
+      "url": "https://itbook.store/books/9781492095873"
+    },
+    {
+      "title": "Building Evolutionary Architectures, 2nd Edition",
+      "subtitle": "Automated Software Governance",
+      "isbn13": "9781492097549",
+      "price": "$69.99",
+      "image": "https://itbook.store/img/books/9781492097549.png",
+      "url": "https://itbook.store/books/9781492097549"
+    },
+    {
+      "title": "Applied Machine Learning and AI for Engineers",
+      "subtitle": "Solve Business Problems That Can&#039;t Be Solved Algorithmically",
+      "isbn13": "9781492098058",
+      "price": "$44.99",
+      "image": "https://itbook.store/img/books/9781492098058.png",
+      "url": "https://itbook.store/books/9781492098058"
+    },
+    {
+      "title": "Continuous API Management, 2nd Edition",
+      "subtitle": "Making the Right Decisions in an Evolving Landscape",
+      "isbn13": "9781098103521",
+      "price": "$33.91",
+      "image": "https://itbook.store/img/books/9781098103521.png",
+      "url": "https://itbook.store/books/9781098103521"
+    },
+    {
+      "title": "Grokking Functional Programming",
+      "subtitle": "",
+      "isbn13": "9781617291838",
+      "price": "$59.99",
+      "image": "https://itbook.store/img/books/9781617291838.png",
+      "url": "https://itbook.store/books/9781617291838"
+    },
+    {
+      "title": "Deep Learning for Natural Language Processing",
+      "subtitle": "",
+      "isbn13": "9781617295447",
+      "price": "$44.96",
+      "image": "https://itbook.store/img/books/9781617295447.png",
+      "url": "https://itbook.store/books/9781617295447"
+    },
+    {
+      "title": "Getting Started with Natural Language Processing",
+      "subtitle": "",
+      "isbn13": "9781617296765",
+      "price": "$39.59",
+      "image": "https://itbook.store/img/books/9781617296765.png",
+      "url": "https://itbook.store/books/9781617296765"
+    },
+    {
+      "title": "Making Sense of Cybersecurity",
+      "subtitle": "",
+      "isbn13": "9781617298004",
+      "price": "$36.99",
+      "image": "https://itbook.store/img/books/9781617298004.png",
+      "url": "https://itbook.store/books/9781617298004"
+    },
+    {
+      "title": "Grokking Continuous Delivery",
+      "subtitle": "",
+      "isbn13": "9781617298257",
+      "price": "$43.99",
+      "image": "https://itbook.store/img/books/9781617298257.png",
+      "url": "https://itbook.store/books/9781617298257"
+    },
+    {
+      "title": "TensorFlow in Action",
+      "subtitle": "",
+      "isbn13": "9781617298349",
+      "price": "$51.99",
+      "image": "https://itbook.store/img/books/9781617298349.png",
+      "url": "https://itbook.store/books/9781617298349"
+    },
+    {
+      "title": "Cloud Native Spring in Action",
+      "subtitle": "With Spring Boot and Kubernetes",
+      "isbn13": "9781617298424",
+      "price": "$40.05",
+      "image": "https://itbook.store/img/books/9781617298424.png",
+      "url": "https://itbook.store/books/9781617298424"
+    },
+    {
+      "title": "The Well-Grounded Java Developer, 2nd Edition",
+      "subtitle": "",
+      "isbn13": "9781617298875",
+      "price": "$55.79",
+      "image": "https://itbook.store/img/books/9781617298875.png",
+      "url": "https://itbook.store/books/9781617298875"
+    },
+    {
+      "title": "Testing Web APIs",
+      "subtitle": "",
+      "isbn13": "9781617299537",
+      "price": "$59.99",
+      "image": "https://itbook.store/img/books/9781617299537.png",
+      "url": "https://itbook.store/books/9781617299537"
+    }
+  ]
+}

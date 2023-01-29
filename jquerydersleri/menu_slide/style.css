@@ -1,26 +1,43 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-color:aliceblue ;
 }
 
 .container{
-    background-color:aliceblue ;
-    width: 100%;
+    background-coloraliceblue: ;
+    width: 90%;
+    margin: auto;
 
 }
 li{
     list-style-type: none;
 }
+a{
+  text-decoration: none;
+  border: 2px solid rgb(238, 241, 243);
+  color: #55ACEE;
+}
 header{
+  margin: 20px;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    flex-wrap: wrap;
+    width: 100%;
 }
 header ul{
     display: flex;
     
+}
+.menu-list{
+  display: none;
+  background-color:aliceblue ;
+
+  cursor: pointer;
+  color: #55ACEE;
 }
 .menu-1{
     padding: auto;
@@ -31,9 +48,8 @@ header ul{
 .menu-2{
     width: 30%;
 }
-.menu-1 li {
-    padding: 10px;
-    margin: 20px;
+.menu-1-li {
+ 
     border: 1px solid aliceblue ;
     justify-content: space-between;
     
@@ -44,54 +60,73 @@ header ul{
     justify-content: space-between;
 }
 .menu-2 li input{
-   padding: 0px 20px;
+   
     width:90%;
-    height: 70%;
-    font-size: 18px;
+  
+   
     text-align: center;
 }
 .menu-1-alt{
     display: none;
     position: absolute;
+    margin: 2px;
+    width: 150px;
+    height: 100px;
+   
 }
+.menu-1-alt li{
+
+  margin: 2px 2px 2px 10px;
+  text-align: left;
+ 
+ 
+}
+
 .menu-2-alt{
     display: none;
     position: absolute;
 }
 
 
-ul u{
+ul ul{
     background-color: burlywood;
 }
 ul li :hover ul{
     background-color: darkgrey;
+    
 }
 header ul li:hover ul{
+ 
   display: block;
-  background-color: dimgrey;
+  background-color: rgb(235, 234, 234);
+ 
 }
 
 .content{
+  margin: 20px;
     display: flex;
-    width: 90%;
-    height: 90%;
     justify-content: space-between;
+
 }
 
 .content main{
     width: 70%;
-   margin: 30px ;
+ 
 }
 
 .content aside{
     width: 15%;
-    margin: 30px ;
+    margin: 0px 30px 0px 30px ;
    background-color: rgb(223, 225, 225);
    justify-content:right;
+}
+.reklam{
+  width: 15%;
 }
 
 .content aside ul{
     width: 90;
+    text-align: center;
 }
 .content aside ul li{
    padding: 10px;
@@ -103,6 +138,7 @@ header ul li:hover ul{
     width: 50px;
     text-align: center;
     text-decoration: none;
+    border-radius: 50%;
   }
   
  
@@ -147,5 +183,29 @@ header ul li:hover ul{
 
 .reklam{
   width: 30%;
+  position: sticky;
   background-color: #3B5998;
+}
+ul li i{
+  color: #323232;
+  float : right;
+  padding: 15px;
+}
+
+@media(max-width:800px){
+  .menu-list{
+    display: block;
+  }
+  .menu-1{
+    display: none;
+    position: static;
+  }
+.menu-1-alt{
+  display: none;
+  position: static;
+}
+/* .menu-1-alt li{
+  display: none;
+  position: static;
+} */
 }
