@@ -6,16 +6,22 @@
 }
 .container{
     
+    border: 1px solid black;
     width: 400px;
-    border-radius: 30%;
+    /* border-radius: 30%; */
     /* background-color: #FFDC40 ; */
+    border-top-right-radius: 10px;
+    border-top-left-radius:  10px;
+   
+  
 
   margin: auto;
 }
 
 .hedr{
+    border-top: 20px solid #FFDC40 ;
     margin: 3px;
-    background-color: #FFDC40 ;
+   
     border-top-right-radius: 10px;
     border-top-left-radius:  10px;
   
@@ -26,6 +32,7 @@ h1{
 }
 .input{
    position: relative;
+   padding: 1px;
 }
 
 .input input{
@@ -34,6 +41,7 @@ h1{
 .input span{
     
     position: absolute;
+    right: 5%;
     
 
 }
@@ -44,14 +52,29 @@ h1{
      
 }
 .list-div{
+    display: none;
     background-color: #FFDC40;
     margin: 3px;
+    border: 1px solid rgb(44, 40, 40);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:  10px;
+   
 }
+.row{
+    position: relative;
+}
+.sil{
+    position: absolute;
+    right: 5px;
+}
+.sil:hover{
+    background-color: blueviolet;
+} 
 .list-ul{
+    justify-content: space-between;
     list-style-type:none;
-    margin: 3px;
+    margin: 5px;
+   
 }
 .list-ul li{
     text-align: center;
@@ -64,4 +87,10 @@ h1{
 .btn-div{
    text-align: center;
    margin: 3px;
+}
+.input-clear{
+    padding: 1px;
+}
+.input-clear:hover{
+    background-color: antiquewhite;
 }

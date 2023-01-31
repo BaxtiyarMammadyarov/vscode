@@ -1,7 +1,9 @@
 const btn_div = document.querySelector(".btn-div");
+let list_div = document.querySelector(".list-div");
 const sorted_btn = document.querySelector(".sorted-btn");
 const v_ul = document.querySelector('.list-ul');
 const input = document.querySelector(".input input");
+const input_clear = document.querySelector(".input-clear");
 let v_list = [];
 let id = 1;
 let sorted = true;
@@ -21,11 +23,16 @@ function appendList(list) {
 function deleteRow(row){
   
    v_list = v_list.filter(v => {return v.id !==row});
+   if(v_list.length ===0){
+    list_div.style.display = "none";
+   }
    
     v_ul.innerHTML = appendList(v_list);
     
   }
-
+input_clear.addEventListener('click',function(){
+    input.value = ''; 
+})
 btn_div.addEventListener('click', function () {
 
     if (input.value.trim().length !== 0) {
@@ -39,7 +46,7 @@ btn_div.addEventListener('click', function () {
         input.value = '';
         v_ul.innerHtml = '';
         // v_list.reverse();
-    
+        list_div.style.display = "block";
 
         v_ul.innerHTML = appendList(v_list);
     }
