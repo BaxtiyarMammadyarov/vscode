@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.req,.res{
+     width: 300px;
+     margin-left: 45%;
+    
+    
+}
+.list{
+    overflow-y: scroll;
+    max-height: 400px;
+}
+.req{
+    background-color:blueviolet;
+    margin-top: 40px;
+}
+.res{
+    background-color :azure;
+    border: 1px solid black;
+   
+}
+.req input{
+    margin: 3px;
+}
+.res ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 3px;
+}
+.res li{
+    width: 95%;
+    padding:  3px;
+    margin: 2px;
+    border: 1px solid black;
+}
+.res img,.res span{
+    width: 80%;
+    padding: 3px;
+    margin: 2px;
+}
