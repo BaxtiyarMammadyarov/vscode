@@ -8,6 +8,7 @@ login.addEventListener('click',(e)=>{
      if(element.email === email.value){
         if(element.password === pass.value){
             window.location.pathname = "/web_front_end_telimi/login/home.html"
+            sessionStorage.setItem("user",JSON.stringify({email:email.value,password : pass.value}))
         }
         else{
             pass.value = "";
